@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Node — the project has no dependencies, but a stray install should not be committed
+node_modules/
+npm-debug.log*
+
+# Hosting CLI state, if the Vercel CLI is ever used locally
+.vercel/

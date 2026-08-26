@@ -1,0 +1,1032 @@
+/* ===========================================================================
+   Budget Allocation — presentation layer.
+
+   Designed as a finance tool, not a landing page. Three rules drive it:
+
+     1. The data is the subject. Chrome is muted, figures are high-contrast,
+        and nothing decorative competes with a number.
+     2. Hierarchy comes from type — size and weight — not from colour or from
+        wrapping every region in a bordered card.
+     3. Density over whitespace. This is a table of 300 salaries; it should
+        read like a ledger, not a marketing page.
+   =========================================================================== */
+
+:root {
+  --page:        #fbfbfc;
+  --surface:     #ffffff;
+  /* Four neutral tiers. Every one clears WCAG AA (4.5:1) against the lightest
+     surface it is used on -- #eff1f4, the table-head track. The two muted tiers
+     were originally #737b85 and #9aa1aa, which measured 3.79:1 and 2.30:1 there:
+     every column heading, filter count and step control sat below the line
+     (Design.md D-27). The ramp is now spaced evenly between #454c56 and the
+     lightest value that still passes. */
+  --ink:         #0f1419;
+  --ink-2:       #454c56;
+  --ink-3:       #565d66;
+  --ink-4:       #666e78;
+  --rule:        #e6e8eb;
+  --rule-strong: #d3d7dc;
+  --accent:      #1257d6;
+  --accent-hover:#0e46ad;
+  --accent-wash: #eef3fd;
+  --track:       #eff1f4;
+  --gain:        #0a6c4a;
+  --alert:       #b3261e;
+  --alert-wash:  #fdf2f1;
+
+  color-scheme: light;
+
+  --shadow-sm:   0 1px 2px rgba(15, 20, 25, 0.07);
+  --shadow-raise:0 1px 2px rgba(15, 20, 25, 0.10), 0 0 0 1px rgba(15, 20, 25, 0.06);
+  --shadow-key:  0 1px 2px rgba(18, 87, 214, 0.28);
+  --ease:        140ms cubic-bezier(0.2, 0, 0.2, 1);
+
+  --icon-caret-down: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M5 7.4 1.4 3.4h7.2z'/%3E%3C/svg%3E");
+  --icon-caret-up:   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M5 2.6 8.6 6.6H1.4z'/%3E%3C/svg%3E");
+  --icon-cross:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M2.6 2.6 7.4 7.4M7.4 2.6 2.6 7.4' stroke='%23000' stroke-width='1.5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E");
+
+  --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* The UA rule for [hidden] is `display: none` at the lowest specificity, so any
+   class that sets `display` silently defeats it. Several regions here are both
+   flex containers and toggled via `.hidden`, so the attribute is made to win. */
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+}
+
+.wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+/* --- masthead ------------------------------------------------------------ */
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem 3rem;
+  padding: 2.25rem 0 1.5rem;
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.masthead-text {
+  flex: 1 1 26rem;
+  min-width: 0;
+  /* A measure, not a pixel width: the tagline stays readable at any root size. */
+  max-width: 62ch;
+}
+
+/* No accent rule under the title: the masthead's own bottom border already
+   separates it, and two horizontal lines a few pixels apart read as unresolved
+   rather than as a device. */
+.masthead h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 680;
+  letter-spacing: -0.026em;
+  line-height: 1.12;
+}
+
+.masthead .tagline {
+  margin: 0;
+  font-size: 0.9688rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+/* --- sticky utility bar --------------------------------------------------- */
+
+/* The masthead itself is not sticky: at ~150rem it would cost a sixth of the
+   viewport on a page whose subject is a table. A 44px bar takes over once the
+   masthead leaves, keeping the title and -- more usefully -- the rates control
+   reachable while reading the data. The ledger head sticks below it. */
+.sticky-bar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  background: rgba(251, 251, 252, 0.86);
+  border-bottom: 1px solid var(--rule);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 180ms cubic-bezier(0.2, 0, 0.2, 1), opacity 180ms, visibility 180ms;
+}
+
+.sticky-bar.is-shown {
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sticky-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1240px;
+  height: 2.75rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sticky-title { font-size: 0.9375rem; font-weight: 640; letter-spacing: -0.012em; }
+.sticky-meta { font-size: 0.8125rem; color: var(--ink-3); white-space: nowrap; }
+
+
+/* --- assumptions panel ---------------------------------------------------- */
+
+.masthead-aside { position: relative; flex: 0 0 auto; }
+
+/* The one fact a first-time viewer needs before the numbers: nothing is live. */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 550;
+  color: var(--ink-2);
+  background: var(--track);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.badge {
+  cursor: pointer;
+  transition: background-color var(--ease), border-color var(--ease);
+}
+
+.badge:hover { background: var(--rule); border-color: var(--rule-strong); }
+.badge[aria-expanded="true"] { background: var(--accent-wash); border-color: var(--accent); color: var(--accent); }
+
+.badge::before {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.badge::after {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-left: 0.1rem;
+  background-color: currentColor;
+  -webkit-mask: var(--icon-caret-down) center / contain no-repeat;
+  mask: var(--icon-caret-down) center / contain no-repeat;
+  opacity: 0.6;
+  transition: transform var(--ease);
+}
+
+.badge[aria-expanded="true"]::after { transform: rotate(180deg); opacity: 1; }
+
+.assumptions {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 30;
+  width: min(24rem, calc(100vw - 2rem));
+  padding: 1rem 1.1rem;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--rule-strong);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(15, 20, 25, 0.13), 0 2px 6px rgba(15, 20, 25, 0.06);
+  backdrop-filter: saturate(180%) blur(16px);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+}
+
+.assumptions h2 {
+  margin: 0 0 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: var(--ink-4);
+}
+
+.assumptions h2 + * { margin-top: 0; }
+.assumptions section + section { margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--rule); }
+.assumptions dl { display: grid; grid-template-columns: auto 1fr; gap: 0.25rem 1rem; margin: 0; }
+.assumptions dt { font-size: 0.875rem; color: var(--ink-2); }
+.assumptions dd { margin: 0; font-size: 0.875rem; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.assumptions p { margin: 0; font-size: 0.8125rem; line-height: 1.5; color: var(--ink-2); }
+.assumptions code { font-family: var(--mono); font-size: 0.75rem; }
+
+@media (max-width: 760px) {
+  .masthead-aside { position: static; }
+  .assumptions { right: 1rem; left: 1rem; width: auto; }
+}
+
+/* --- section scaffolding ------------------------------------------------- */
+
+.section { padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
+.section:last-of-type { border-bottom: none; }
+
+.eyebrow {
+  margin: 0 0 0.85rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: var(--ink-4);
+}
+
+/* --- budget toolbar ------------------------------------------------------ */
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.85rem 1rem;
+  padding: 1.15rem 1.25rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+}
+
+.field-grow { flex: 1 1 22rem; }
+.actions { display: flex; gap: 0.5rem; }
+
+.field { display: flex; flex-direction: column; gap: 0.3rem; }
+
+.field > label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+
+/* Currency and amount are one decision, so they read as one control. */
+.input-group {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--rule-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  overflow: hidden;
+  transition: border-color var(--ease), box-shadow var(--ease);
+}
+
+.input-group:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-wash);
+}
+
+.input-group select[id] {
+  border: none;
+  border-right: 1px solid var(--rule);
+  border-radius: 0;
+  background-color: var(--track);
+  font-weight: 600;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  min-width: 0;
+  width: auto;
+  padding-left: 0.85rem;
+  padding-right: 1.7rem;
+  background-position: right 0.6rem center;
+}
+
+.input-group select:hover { background-color: var(--rule); }
+
+.input-group input[type="text"] {
+  border: none;
+  border-radius: 0;
+  height: 2.75rem;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-inline: 0.85rem;
+  font-size: 1.0625rem;
+  font-weight: 550;
+}
+
+.input-group :is(select, input):focus-visible { outline: none; }
+/* Invalid state is a class the app sets alongside aria-invalid, so the two
+   cannot drift apart and the state is testable without a real style engine.
+   It enters instantly: an error should snap, not fade in. Leaving it still
+   fades, because the base rule's transition governs the way back. */
+.input-group.is-invalid {
+  border-color: var(--alert);
+  box-shadow: 0 0 0 3px var(--alert-wash);
+  transition: none;
+}
+
+select, input[type="text"] {
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  background-color: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: 7px;
+  padding: 0.45rem 0.65rem;
+  height: 2.25rem;
+  transition: border-color var(--ease), box-shadow var(--ease), background-color var(--ease);
+}
+
+/* Native select arrows differ per platform and sit wherever the OS puts them.
+   A drawn chevron keeps the "this opens a menu" cue consistent, and the padding
+   is sized so the arrow sits just clear of the text rather than stranded at the
+   far edge of a wider-than-needed control. */
+select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 1.75rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 4.75 6 7.75 9 4.75' fill='none' stroke='%235b636d' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.55rem center;
+  background-size: 11px 11px;
+}
+
+#budget-amount::placeholder { color: var(--ink-4); font-weight: 400; }
+
+:is(select, input, button):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+button {
+  font: inherit;
+  font-weight: 580;
+  height: 2.25rem;
+  padding: 0 1rem;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--ease), border-color var(--ease),
+              box-shadow var(--ease), color var(--ease), transform var(--ease);
+}
+
+/* The action cluster matches the input group it sits beside, so the row reads
+   as one control strip rather than a field with something tacked on. */
+.actions button { height: 2.875rem; padding-inline: 1.15rem; border-radius: 8px; }
+
+button.primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: var(--shadow-key);
+}
+
+button.primary:hover { background: var(--accent-hover); }
+button.primary:active { transform: translateY(1px); box-shadow: none; }
+
+button.quiet {
+  background: var(--surface);
+  border-color: var(--rule-strong);
+  color: var(--ink-2);
+}
+
+button.quiet:hover { background: var(--track); border-color: var(--ink-4); color: var(--ink); }
+button.quiet:active { transform: translateY(1px); }
+
+.hint {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--ink-3);
+}
+
+.hint b { color: var(--ink-2); font-weight: 600; }
+
+.error {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--alert);
+  background: var(--alert-wash);
+  border: 1px solid rgba(180, 35, 24, 0.22);
+  border-radius: 8px;
+}
+
+.error::before {
+  content: "!";
+  flex: 0 0 auto;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 50%;
+  background: var(--alert);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.05rem;
+  text-align: center;
+}
+
+/* Tells a first-time reader what to do, and gets out of the way afterwards. */
+.prompt {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  margin: 1rem 0 0;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+  background: var(--accent-wash);
+  border: 1px dashed rgba(18, 87, 214, 0.35);
+  border-radius: 8px;
+}
+
+.prompt b { color: var(--ink); font-weight: 650; }
+.prompt-mark { color: var(--accent); font-weight: 700; }
+
+/* --- summary: a stat strip, not a grid of cards -------------------------- */
+
+/* min(100%, 15rem) rather than a flat minimum: the track may shrink below its
+   preferred width on a narrow viewport instead of forcing the strip wider than
+   the page. */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border-block: 1px solid var(--rule);
+}
+
+.stat {
+  background: var(--page);
+  padding: 0.85rem 1.15rem 0.95rem;
+  min-width: 0;   /* grid items default to min-width:auto and refuse to shrink */
+}
+
+.stat:first-child { padding-left: 0; }
+
+.stat-label {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-4);
+}
+
+/* Long values step down rather than overflow. At the maximum budget the value
+   runs to 25 characters; clipping a monetary figure is not an option, and
+   wrapping a number mid-digit is worse (Design.md D-24). */
+.stat-value {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 1.4375rem;
+  font-weight: 620;
+  letter-spacing: -0.015em;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+
+.stat-value.is-long  { font-size: 1.1875rem; letter-spacing: -0.02em; }
+.stat-value.is-xlong { font-size: 1rem; letter-spacing: -0.022em; }
+
+.stat-note { display: block; margin-top: 0.15rem; font-size: 0.75rem; color: var(--ink-3); }
+.stat.is-delta .stat-value { color: var(--gain); }
+
+/* --- per-country breakdown ----------------------------------------------- */
+
+.scroll-x { overflow-x: auto; margin-top: 1.5rem; }
+
+.breakdown { width: 100%; border-collapse: collapse; }
+
+.breakdown caption {
+  text-align: left;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: var(--ink-4);
+  padding-bottom: 0.5rem;
+}
+
+.breakdown th, .breakdown td {
+  padding: 0.5rem 0.85rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.breakdown thead th {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-4);
+  border-bottom-color: var(--rule-strong);
+}
+
+.breakdown tbody th { text-align: left; font-weight: 600; padding-left: 0; }
+.breakdown thead th:first-child { padding-left: 0; }
+.breakdown td:last-child, .breakdown th:last-child { padding-right: 0; }
+.breakdown .delta { color: var(--gain); }
+
+/* --- reconciliation note -------------------------------------------------- */
+
+.reconciliation {
+  margin: 1.25rem 0 0;
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--accent);
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
+
+.reconciliation b { font-weight: 600; color: var(--ink); }
+.reconciliation .aside { display: block; margin-top: 0.25rem; color: var(--ink-3); font-size: 0.78125rem; }
+
+/* --- filters -------------------------------------------------------------- */
+
+.table-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 0.85rem;
+}
+
+/* View controls sit together: what am I looking at, and how much of it. */
+/* Hairlines between control groups. Whitespace alone left "Role [All roles]
+   Rows [25] Showing 1-25 of 300" reading as one run-on strip; a rule per group
+   separates them without wrapping each in a box. */
+.view-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0;
+  margin-left: auto;
+}
+
+.view-controls > * + * {
+  margin-left: 0.9rem;
+  padding-left: 0.9rem;
+  border-left: 1px solid var(--rule);
+}
+
+@media (max-width: 760px) {
+  .view-controls > * + * { margin-left: 0; padding-left: 0; border-left: none; }
+}
+
+/* Segmented control: the track makes the group read as one switch, and the
+   raised segment shows which way it is currently set. */
+.filters {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 3px;
+  background: var(--track);
+  border: 1px solid var(--rule);
+  border-radius: 9px;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 2.125rem;
+  padding: 0 0.9rem;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ink-3);
+  font-weight: 550;
+  font-size: 0.875rem;
+}
+
+.filter-btn:hover { background: rgba(255, 255, 255, 0.72); color: var(--ink); }
+.filter-btn:active { transform: none; }
+
+.filter-btn[aria-pressed="true"] {
+  background: var(--surface);
+  color: var(--accent);
+  font-weight: 620;
+  box-shadow: var(--shadow-raise);
+}
+
+.filter-count {
+  font-size: 0.8125rem;
+  color: var(--ink-4);
+  font-variant-numeric: tabular-nums;
+}
+
+.filter-btn[aria-pressed="true"] .filter-count { color: var(--accent); opacity: 0.7; }
+
+/* Active sort, shown as a removable chip: states the ordering and clears it. */
+.sort-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 1.9rem;
+  padding: 0 0.4rem 0 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 550;
+  color: var(--accent);
+  background: var(--accent-wash);
+  border: 1px solid rgba(18, 87, 214, 0.28);
+  border-radius: 999px;
+}
+
+.sort-chip:hover { background: #e2ebfb; border-color: var(--accent); }
+.sort-chip:active { transform: none; }
+.sort-chip-dir {
+  width: 0.45rem;
+  height: 0.45rem;
+  background-color: currentColor;
+  -webkit-mask: var(--icon-caret-down) center / contain no-repeat;
+  mask: var(--icon-caret-down) center / contain no-repeat;
+}
+
+.sort-chip-dir.is-asc {
+  -webkit-mask-image: var(--icon-caret-up);
+  mask-image: var(--icon-caret-up);
+}
+
+.sort-chip-clear {
+  position: relative;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 50%;
+  background: rgba(18, 87, 214, 0.14);
+}
+
+/* The cross is drawn and absolutely centred, so it cannot drift inside the
+   circle the way a multiplication-sign glyph does. */
+.sort-chip-clear::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: currentColor;
+  -webkit-mask: var(--icon-cross) center / contain no-repeat;
+  mask: var(--icon-cross) center / contain no-repeat;
+}
+
+.sort-chip:hover .sort-chip-clear { background: var(--accent); color: #fff; }
+
+#rows-shown { font-size: 0.8125rem; color: var(--ink-4); white-space: nowrap; }
+
+/* --- employee ledger ------------------------------------------------------ */
+
+/* Overflow is `visible` at widths where the table fits.
+   `overflow-x: auto` computes overflow-y to `auto` as well, which makes this a
+   scroll container -- and a sticky table head then resolves against it rather
+   than against the page, so it never sticks. Pagination removed the container's
+   max-height, so that is exactly what had been happening. Below the width where
+   the table fits, the scroller comes back and the head sticks within it. */
+.ledger-scroll {
+  overflow: visible;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--surface);
+}
+
+/* 69rem = the table's 66rem min-width plus .wrap's 1.5rem padding either side.
+   Above it the table fits and overflow stays visible so the head can stick;
+   below it the wrapper scrolls. Change .ledger min-width and this must move. */
+@media (max-width: 69rem) {
+  .ledger-scroll { overflow-x: auto; }
+}
+
+/* --- pagination ----------------------------------------------------------- */
+
+.field-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.field-inline label {
+  font-size: 0.8125rem;
+  font-weight: 550;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.field-inline select {
+  height: 2rem;
+  min-width: 4.5rem;
+  padding-block: 0;
+  font-size: 0.8125rem;
+  font-weight: 550;
+  background-color: var(--surface);
+}
+
+.field-inline select:hover { border-color: var(--ink-4); }
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  width: fit-content;
+  margin: 0.85rem auto 0;
+  padding: 3px;
+  background: var(--track);
+  border: 1px solid var(--rule);
+  border-radius: 9px;
+}
+
+.page-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.9rem;
+  padding: 0 0.65rem;
+  font-size: 0.8125rem;
+  font-weight: 550;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--ink-2);
+}
+
+.page-btn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.75); color: var(--ink); }
+.page-btn:active:not(:disabled) { transform: none; }
+
+.page-btn:disabled {
+  color: var(--ink-4);
+  cursor: default;
+  opacity: 0.5;
+}
+
+.page-btn.is-step { font-weight: 580; }
+
+.page-num {
+  min-width: 1.9rem;
+  padding: 0 0.4rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.page-num[aria-current="page"] {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 640;
+  box-shadow: var(--shadow-key);
+}
+
+.page-num[aria-current="page"]:hover { background: var(--accent-hover); color: #fff; }
+
+.page-gap {
+  padding: 0 0.15rem;
+  font-size: 0.8125rem;
+  color: var(--ink-4);
+  user-select: none;
+}
+
+/* Fixed layout, with declared widths.
+   With `auto`, the browser re-measures every column against the visible rows,
+   so filtering to a role with shorter names moved every boundary -- Name lost
+   19px, Role 23px, Salary gained 12px. Declared widths cost the ability to grow
+   for unusually long content (handled with ellipsis below) and buy a table that
+   holds still while you work. */
+.ledger {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  /* Below this the columns would compress past their own headings. The wrapper
+     scrolls horizontally instead of squeezing them (see .ledger-scroll). */
+  /* Grows with the money columns so long amounts widen the table rather than
+     being clipped inside it. */
+  min-width: max(66rem, 44% + 3 * var(--money-col, 12rem));
+}
+
+/* Text columns are sized by their HEADINGS, which are uppercase with
+   letter-spacing and so wider than the values beneath them.
+
+   Money columns are sized by their CONTENT instead, via --money-col, which the
+   application sets from the longest amount in the whole result. A percentage
+   width truncated large amounts with an ellipsis; a monetary value must never
+   be shortened, so the column grows and the wrapper scrolls (Design.md D-24). */
+.ledger col.c-name    { width: 15.5%; }
+.ledger col.c-id      { width: 11%; }
+.ledger col.c-role    { width: 19.5%; }
+.ledger col.c-country { width: 9%; }
+.ledger col.c-money   { width: var(--money-col, 15%); }
+
+.ledger thead th {
+  position: sticky;
+  top: var(--sticky-offset, 0px);
+  z-index: 1;
+  background: var(--track);
+  padding: 0.55rem 0.85rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-4);
+  white-space: nowrap;
+  box-shadow: inset 0 -1px 0 var(--rule-strong);
+}
+
+.ledger thead th .sub {
+  display: block;
+  margin-top: 0.05rem;
+  font-size: 0.7188rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink-4);
+  opacity: 0.85;
+}
+
+/* Sortable headings are buttons, so they get a hit area, a hover cue and a
+   caret. Non-sortable ones stay plain text -- only what responds looks live. */
+.sort-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: inherit;
+  gap: 0;
+  height: auto;
+  padding: 0.15rem 0.35rem;
+  margin: -0.15rem -0.35rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-align: inherit;
+}
+
+.ledger thead th.num .sort-btn { align-items: flex-end; }
+.sort-btn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.85); color: var(--ink); }
+.sort-btn:active:not(:disabled) { transform: none; }
+.sort-btn:disabled { cursor: default; opacity: 0.55; }
+
+/* Label and caret share a line; the sub-label sits under both. */
+.sort-head {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.sort-mark {
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: currentColor;
+  -webkit-mask: var(--icon-caret-down) center / contain no-repeat;
+  mask: var(--icon-caret-down) center / contain no-repeat;
+  opacity: 0;
+  transition: opacity var(--ease);
+}
+
+.sort-mark.is-asc,
+.sort-mark.is-desc { opacity: 1; }
+.sort-mark.is-asc {
+  -webkit-mask-image: var(--icon-caret-up);
+  mask-image: var(--icon-caret-up);
+}
+
+/* A faint caret on hover says the heading is sortable before it is clicked. */
+.sort-btn:hover:not(:disabled) .sort-mark { opacity: 0.35; }
+.sort-btn:hover:not(:disabled) .sort-mark.is-asc,
+.sort-btn:hover:not(:disabled) .sort-mark.is-desc { opacity: 1; }
+
+.ledger thead th[aria-sort]:not([aria-sort="none"]) {
+  background: var(--accent-wash);
+  color: var(--accent);
+}
+
+.ledger tbody th, .ledger tbody td {
+  padding: 0.45rem 0.85rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+/* Names and roles may be shortened; money never may. */
+.ledger tbody :is(th, td):not(.num) { overflow: hidden; text-overflow: ellipsis; }
+.ledger tbody td.num { overflow: visible; }
+
+.ledger tbody tr:last-child :is(th, td) { border-bottom: none; }
+.ledger tbody th { text-align: left; font-weight: 550; }
+.ledger tbody tr { transition: background-color var(--ease); }
+.ledger tbody td.is-sorted-col { background: rgba(18, 87, 214, 0.045); }
+.ledger tbody tr:hover td.is-sorted-col { background: rgba(18, 87, 214, 0.11); }
+.ledger tbody tr:hover :is(th, td) { background: var(--accent-wash); }
+
+/* Numeric headers must sit over their figures. `.ledger thead th` outranks a
+   bare `.num`, so the alignment is restated at matching specificity. */
+.num,
+.ledger thead th.num,
+.ledger tbody td.num { text-align: right; }
+.col-id { font-family: var(--mono); font-size: 0.8125rem; color: var(--ink-3); }
+.col-role, .col-country { color: var(--ink-2); }
+
+.allocation { color: var(--gain); }
+.updated { font-weight: 600; }
+.is-idle { color: var(--ink-4); }
+.empty-row { padding: 2.5rem; text-align: center; color: var(--ink-4); }
+
+/* --- footnotes ------------------------------------------------------------ */
+
+/* Label / value rows rather than paragraphs side by side. Each note owns a full
+   row, so a clause can never be split across a column boundary and end up with
+   one orphaned word -- which is what put "Design.md" on a line of its own. */
+.footnotes {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.45rem 1.25rem;
+  margin: 1.75rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--ink-3);
+}
+
+.footnotes dt {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: var(--ink-4);
+  padding-top: 0.15rem;
+}
+
+.footnotes dd {
+  margin: 0;
+  max-width: 72ch;
+  text-wrap: pretty;   /* progressive: discourages a single trailing word */
+}
+
+/* The rates sit on their own line: a dash between a date and an exchange rate
+   reads as a range, and reading "2026-08-26 - 1 USD" invites exactly that. */
+.footnotes .rate-lines {
+  display: block;
+  margin-top: 0.15rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+}
+
+@media (max-width: 560px) {
+  .footnotes { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  .footnotes dt { padding-top: 0.5rem; }
+}
+
+.footnotes h2 {
+  margin: 0 0 0.35rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: var(--ink-4);
+}
+
+.footnotes ul { margin: 0; padding: 0; list-style: none; }
+.footnotes li + li { margin-top: 0.15rem; }
+.footnotes code { font-family: var(--mono); font-size: 0.75rem; color: var(--ink-2); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+@media (max-width: 760px) {
+  .wrap { padding-inline: 1rem; }
+  .toolbar > .field, .actions { width: 100%; }
+  .actions button { flex: 1 1 auto; }
+  .filters, .pagination { width: 100%; justify-content: center; }
+  .view-controls { margin-left: 0; width: 100%; }
+
+  /* One figure per row: a money value must not wrap mid-number, so it needs
+     the full column width rather than a narrower share of it. */
+  .stats { grid-template-columns: 1fr; }
+  .stat, .stat:first-child { padding-inline: 0; }
+  .stat-value { font-size: 1.1875rem; }
+
+  .masthead { padding-top: 1.75rem; }
+  .masthead h1 { font-size: 1.5rem; }
+  .filters { gap: 1rem; }
+}

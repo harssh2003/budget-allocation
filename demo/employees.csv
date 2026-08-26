@@ -1,0 +1,301 @@
+Name,Employee_ID,Role,Country,Salary,Currency
+Andrew Anderson,EMP-001,DevOps Engineer,USA,105500,USD
+Ashley Garcia,EMP-002,Software Engineer,USA,106500,USD
+William Wilson,EMP-003,Software Engineer,USA,91500,USD
+Emily Gonzalez,EMP-004,DevOps Engineer,USA,130000,USD
+Susan Anderson,EMP-005,Product Manager,USA,128000,USD
+James Hernandez,EMP-006,Senior Software Engineer,USA,154500,USD
+Christopher Wilson,EMP-007,Senior Software Engineer,USA,176500,USD
+William Harris,EMP-008,Senior Software Engineer,USA,124500,USD
+Kimberly Taylor,EMP-009,Sales Manager,USA,125000,USD
+Ashley Davis,EMP-010,Product Manager,USA,160500,USD
+Emily Jackson,EMP-011,Data Analyst,USA,81500,USD
+Linda Torres,EMP-012,DevOps Engineer,USA,108000,USD
+Steven Jackson,EMP-013,Software Engineer,USA,137500,USD
+Brian Robinson,EMP-014,Sales Manager,USA,116000,USD
+Linda Thompson,EMP-015,Data Analyst,USA,66000,USD
+David Hill,EMP-016,Senior Software Engineer,USA,151000,USD
+Andrew Hernandez,EMP-017,ML Engineer,USA,147000,USD
+Emily Anderson,EMP-018,Senior Software Engineer,USA,154000,USD
+John Anderson,EMP-019,Sales Manager,USA,126000,USD
+Barbara Moore,EMP-020,Engineering Manager,USA,163500,USD
+Amanda Lee,EMP-021,HR Manager,USA,90000,USD
+Karen Martinez,EMP-022,Data Scientist,USA,116500,USD
+Emily Wright,EMP-023,Senior Software Engineer,USA,134500,USD
+Michelle Sanchez,EMP-024,ML Engineer,USA,142000,USD
+Thomas Allen,EMP-025,Financial Analyst,USA,81500,USD
+Joseph Martinez,EMP-026,Senior Product Manager,USA,175500,USD
+Jessica Hill,EMP-027,Engineering Manager,USA,163500,USD
+Karen King,EMP-028,Data Analyst,USA,67000,USD
+James Davis,EMP-029,ML Engineer,USA,159000,USD
+Brian Perez,EMP-030,ML Engineer,USA,128000,USD
+Kevin Allen,EMP-031,Data Analyst,USA,79500,USD
+Richard Martin,EMP-032,Data Scientist,USA,142500,USD
+Anthony Martinez,EMP-033,Data Scientist,USA,120500,USD
+Sandra Smith,EMP-034,Software Engineer,USA,106500,USD
+Joseph White,EMP-035,Data Scientist,USA,145500,USD
+John Thomas,EMP-036,Engineering Manager,USA,214500,USD
+William Young,EMP-037,Financial Analyst,USA,92500,USD
+Ashley Rodriguez,EMP-038,Financial Analyst,USA,70500,USD
+Emily Hernandez,EMP-039,Data Scientist,USA,116500,USD
+Jessica Wilson,EMP-040,Sales Manager,USA,135000,USD
+Anthony Martin,EMP-041,Senior Product Manager,USA,166000,USD
+Linda Lewis,EMP-042,DevOps Engineer,USA,142000,USD
+David Perez,EMP-043,Data Analyst,USA,58500,USD
+Michelle Anderson,EMP-044,ML Engineer,USA,114500,USD
+David Williams,EMP-045,Product Manager,USA,149000,USD
+Andrew Moore,EMP-046,Software Engineer,USA,110000,USD
+Thomas Torres,EMP-047,Senior Software Engineer,USA,148000,USD
+Nancy Clark,EMP-048,Senior Software Engineer,USA,130500,USD
+Jessica Thompson,EMP-049,Software Engineer,USA,99000,USD
+John Miller,EMP-050,Data Scientist,USA,105000,USD
+Richard Thomas,EMP-051,Product Manager,USA,118000,USD
+Thomas Ramirez,EMP-052,ML Engineer,USA,133000,USD
+David Lewis,EMP-053,Data Scientist,USA,140500,USD
+Richard Brown,EMP-054,Sales Manager,USA,116500,USD
+James Garcia,EMP-055,ML Engineer,USA,180500,USD
+Daniel Clark,EMP-056,Sales Manager,USA,109500,USD
+Barbara Brown,EMP-057,Senior Software Engineer,USA,129000,USD
+Karen Jackson,EMP-058,Software Engineer,USA,99000,USD
+Emily Young,EMP-059,Financial Analyst,USA,71500,USD
+John Nguyen,EMP-060,Senior Software Engineer,USA,157000,USD
+Mary Brown,EMP-061,Software Engineer,USA,80000,USD
+Sandra Hernandez,EMP-062,Data Scientist,USA,105000,USD
+Matthew Jones,EMP-063,Data Scientist,USA,129000,USD
+Andrew Sanchez,EMP-064,Product Manager,USA,114500,USD
+Andrew Nguyen,EMP-065,HR Manager,USA,102000,USD
+Susan Nguyen,EMP-066,DevOps Engineer,USA,123000,USD
+Kevin Wilson,EMP-067,Senior Software Engineer,USA,153000,USD
+Kevin Sanchez,EMP-068,Senior Software Engineer,USA,127000,USD
+Karen Lee,EMP-069,DevOps Engineer,USA,145000,USD
+James Robinson,EMP-070,Financial Analyst,USA,85000,USD
+Richard Jones,EMP-071,ML Engineer,USA,150500,USD
+Thomas Thompson,EMP-072,Data Scientist,USA,145500,USD
+Linda Jackson,EMP-073,Sales Manager,USA,96500,USD
+Justin Flores,EMP-074,Engineering Manager,USA,231000,USD
+Emily Martin,EMP-075,Engineering Manager,USA,221000,USD
+Thomas Taylor,EMP-076,Software Engineer,USA,85000,USD
+Emily Martinez,EMP-077,Software Engineer,USA,93000,USD
+Patricia Wilson,EMP-078,DevOps Engineer,USA,128500,USD
+Margaret Young,EMP-079,Sales Manager,USA,101000,USD
+John Garcia,EMP-080,HR Manager,USA,103000,USD
+Patricia Rodriguez,EMP-081,Engineering Manager,USA,196500,USD
+Sarah Scott,EMP-082,Senior Software Engineer,USA,155000,USD
+Joseph Jones,EMP-083,ML Engineer,USA,183000,USD
+Christopher Wright,EMP-084,Product Manager,USA,108000,USD
+Jessica Rodriguez,EMP-085,Data Analyst,USA,60000,USD
+Robert Thompson,EMP-086,Data Analyst,USA,66000,USD
+Richard Thompson,EMP-087,Senior Software Engineer,USA,160000,USD
+Susan Flores,EMP-088,Sales Manager,USA,122000,USD
+Matthew Clark,EMP-089,Financial Analyst,USA,64500,USD
+Patricia Clark,EMP-090,Product Manager,USA,145000,USD
+Daniel Miller,EMP-091,Sales Manager,USA,105500,USD
+Nancy Anderson,EMP-092,Software Engineer,USA,90000,USD
+Jennifer Martin,EMP-093,HR Manager,USA,111000,USD
+Steven Johnson,EMP-094,Sales Manager,USA,117000,USD
+Margaret Sanchez,EMP-095,Data Analyst,USA,76500,USD
+Patricia Johnson,EMP-096,Sales Manager,USA,94000,USD
+Matthew Nguyen,EMP-097,Financial Analyst,USA,102000,USD
+Richard Hill,EMP-098,Senior Software Engineer,USA,141500,USD
+Mary Ramirez,EMP-099,Product Manager,USA,134500,USD
+Elizabeth Torres,EMP-100,Data Scientist,USA,113000,USD
+Riya Sharma,EMP-101,Software Engineer,India,1040000,INR
+Rahul Mehta,EMP-102,Engineering Manager,India,3780000,INR
+Ananya Khanna,EMP-103,Financial Analyst,India,970000,INR
+Manoj Mishra,EMP-104,Sales Manager,India,1260000,INR
+Ishita Malhotra,EMP-105,Data Analyst,India,780000,INR
+Aadhya Pillai,EMP-106,Software Engineer,India,1100000,INR
+Nisha Sharma,EMP-107,Senior Software Engineer,India,1860000,INR
+Deepa Arora,EMP-108,Software Engineer,India,1130000,INR
+Neha Banerjee,EMP-109,Data Scientist,India,1810000,INR
+Rohan Patel,EMP-110,Engineering Manager,India,3630000,INR
+Swati Desai,EMP-111,DevOps Engineer,India,1250000,INR
+Ramesh Kapoor,EMP-112,Financial Analyst,India,920000,INR
+Vivaan Gupta,EMP-113,Software Engineer,India,890000,INR
+Arjun Subramanian,EMP-114,Data Scientist,India,1740000,INR
+Rahul Agarwal,EMP-115,DevOps Engineer,India,1600000,INR
+Aarav Reddy,EMP-116,Senior Software Engineer,India,2270000,INR
+Meera Subramanian,EMP-117,Senior Software Engineer,India,1590000,INR
+Ayaan Subramanian,EMP-118,Senior Software Engineer,India,1700000,INR
+Meera Saxena,EMP-119,Data Scientist,India,1880000,INR
+Neha Khanna,EMP-120,Financial Analyst,India,1220000,INR
+Riya Saxena,EMP-121,HR Manager,India,1200000,INR
+Sneha Krishnan,EMP-122,Software Engineer,India,900000,INR
+Anil Tiwari,EMP-123,Senior Software Engineer,India,1990000,INR
+Neha Singh,EMP-124,Senior Software Engineer,India,2200000,INR
+Ananya Joshi,EMP-125,Senior Software Engineer,India,2430000,INR
+Ishaan Mukherjee,EMP-126,Software Engineer,India,970000,INR
+Amit Singh,EMP-127,Software Engineer,India,980000,INR
+Pooja Trivedi,EMP-128,Senior Software Engineer,India,1610000,INR
+Aadhya Chawla,EMP-129,Engineering Manager,India,4630000,INR
+Kiran Agarwal,EMP-130,Software Engineer,India,1020000,INR
+Manoj Agarwal,EMP-131,Financial Analyst,India,1250000,INR
+Kavya Pandey,EMP-132,Financial Analyst,India,1180000,INR
+Lakshmi Mukherjee,EMP-133,ML Engineer,India,2160000,INR
+Anjali Verma,EMP-134,Senior Software Engineer,India,1920000,INR
+Ishita Menon,EMP-135,DevOps Engineer,India,1950000,INR
+Swati Pandey,EMP-136,HR Manager,India,900000,INR
+Kiran Verma,EMP-137,Data Analyst,India,600000,INR
+Pooja Pillai,EMP-138,Data Analyst,India,580000,INR
+Amit Subramanian,EMP-139,Data Analyst,India,700000,INR
+Aadhya Chauhan,EMP-140,Senior Product Manager,India,3520000,INR
+Vijay Patel,EMP-141,Engineering Manager,India,3830000,INR
+Vihaan Shah,EMP-142,Product Manager,India,1920000,INR
+Aditya Verma,EMP-143,Software Engineer,India,1420000,INR
+Vivaan Khanna,EMP-144,Software Engineer,India,830000,INR
+Ayaan Bhatia,EMP-145,Software Engineer,India,1420000,INR
+Vijay Mehta,EMP-146,Data Scientist,India,1540000,INR
+Ayaan Menon,EMP-147,DevOps Engineer,India,2190000,INR
+Vivaan Kapoor,EMP-148,Software Engineer,India,1070000,INR
+Aadhya Bhatt,EMP-149,HR Manager,India,1600000,INR
+Deepa Das,EMP-150,Software Engineer,India,790000,INR
+Lakshmi Rao,EMP-151,Senior Product Manager,India,3580000,INR
+Aditya Shah,EMP-152,ML Engineer,India,2210000,INR
+Arjun Mishra,EMP-153,DevOps Engineer,India,1730000,INR
+Kavya Yadav,EMP-154,Software Engineer,India,790000,INR
+Pooja Iyer,EMP-155,Financial Analyst,India,1020000,INR
+Anil Khanna,EMP-156,Product Manager,India,2470000,INR
+Sneha Subramanian,EMP-157,ML Engineer,India,2110000,INR
+Anil Joshi,EMP-158,Product Manager,India,2530000,INR
+Sai Chauhan,EMP-159,Engineering Manager,India,4450000,INR
+Pooja Bhatia,EMP-160,Senior Software Engineer,India,2100000,INR
+Vivaan Yadav,EMP-161,Data Analyst,India,910000,INR
+Vijay Desai,EMP-162,Software Engineer,India,910000,INR
+Anil Saxena,EMP-163,DevOps Engineer,India,1080000,INR
+Sai Das,EMP-164,Financial Analyst,India,1160000,INR
+Ramesh Rathore,EMP-165,Data Scientist,India,1930000,INR
+Vivaan Patel,EMP-166,Data Scientist,India,1650000,INR
+Deepa Mehta,EMP-167,Data Analyst,India,750000,INR
+Ananya Shah,EMP-168,ML Engineer,India,2410000,INR
+Vijay Mukherjee,EMP-169,Senior Software Engineer,India,1690000,INR
+Ayaan Pandey,EMP-170,Software Engineer,India,1420000,INR
+Rahul Banerjee,EMP-171,Product Manager,India,2380000,INR
+Deepa Tiwari,EMP-172,Senior Software Engineer,India,2080000,INR
+Rahul Malhotra,EMP-173,Financial Analyst,India,930000,INR
+Aarav Pandey,EMP-174,Software Engineer,India,810000,INR
+Vihaan Saxena,EMP-175,Software Engineer,India,920000,INR
+Anjali Reddy,EMP-176,Financial Analyst,India,1270000,INR
+Sneha Rathore,EMP-177,ML Engineer,India,2110000,INR
+Vihaan Bose,EMP-178,Software Engineer,India,1400000,INR
+Arjun Bhatt,EMP-179,Data Scientist,India,1800000,INR
+Vihaan Iyer,EMP-180,ML Engineer,India,1810000,INR
+Manoj Patel,EMP-181,ML Engineer,India,3090000,INR
+Kavya Arora,EMP-182,Software Engineer,India,1090000,INR
+Meera Agarwal,EMP-183,DevOps Engineer,India,1560000,INR
+Deepa Naidu,EMP-184,Data Analyst,India,700000,INR
+Swati Reddy,EMP-185,DevOps Engineer,India,2140000,INR
+Amit Bose,EMP-186,Software Engineer,India,1130000,INR
+Karthik Saxena,EMP-187,Software Engineer,India,760000,INR
+Neha Arora,EMP-188,Software Engineer,India,1010000,INR
+Sanjay Malhotra,EMP-189,Software Engineer,India,1160000,INR
+Suresh Bose,EMP-190,Data Scientist,India,2080000,INR
+Rahul Naidu,EMP-191,DevOps Engineer,India,1280000,INR
+Ishaan Chauhan,EMP-192,Senior Software Engineer,India,2330000,INR
+Rohan Kapoor,EMP-193,Software Engineer,India,1090000,INR
+Sanjay Krishnan,EMP-194,Engineering Manager,India,3420000,INR
+Ishita Chauhan,EMP-195,Product Manager,India,2150000,INR
+Sai Arora,EMP-196,Data Scientist,India,1370000,INR
+Priya Arora,EMP-197,Data Analyst,India,680000,INR
+Kiran Chawla,EMP-198,Software Engineer,India,1420000,INR
+Anil Bhatia,EMP-199,Financial Analyst,India,790000,INR
+Sneha Tiwari,EMP-200,Senior Product Manager,India,3390000,INR
+Eduardo Cabrera,EMP-201,HR Manager,Mexico,440000,MXN
+Jorge Aguilar,EMP-202,Engineering Manager,Mexico,1110000,MXN
+Francisco Flores,EMP-203,Senior Software Engineer,Mexico,585000,MXN
+Rafael Gutierrez,EMP-204,Product Manager,Mexico,755000,MXN
+Adriana Rodriguez,EMP-205,ML Engineer,Mexico,600000,MXN
+Sofia Salazar,EMP-206,Senior Software Engineer,Mexico,715000,MXN
+Paola Medina,EMP-207,Software Engineer,Mexico,345000,MXN
+Laura Silva,EMP-208,Software Engineer,Mexico,420000,MXN
+Luis Reyes,EMP-209,DevOps Engineer,Mexico,500000,MXN
+Rafael Guerrero,EMP-210,Software Engineer,Mexico,460000,MXN
+Juan Contreras,EMP-211,Data Scientist,Mexico,655000,MXN
+Antonio Rios,EMP-212,Product Manager,Mexico,510000,MXN
+Pablo Sanchez,EMP-213,Data Analyst,Mexico,290000,MXN
+Fernando Marin,EMP-214,Software Engineer,Mexico,480000,MXN
+Gabriel Vargas,EMP-215,Senior Software Engineer,Mexico,720000,MXN
+Manuel Medina,EMP-216,Financial Analyst,Mexico,390000,MXN
+Martha Salazar,EMP-217,Data Analyst,Mexico,330000,MXN
+Miguel Ruiz,EMP-218,Software Engineer,Mexico,425000,MXN
+Guadalupe Salazar,EMP-219,Sales Manager,Mexico,470000,MXN
+Antonio Cabrera,EMP-220,Software Engineer,Mexico,380000,MXN
+Fernando Guerrero,EMP-221,DevOps Engineer,Mexico,560000,MXN
+Carmen Herrera,EMP-222,Senior Software Engineer,Mexico,595000,MXN
+Diego Jimenez,EMP-223,Financial Analyst,Mexico,390000,MXN
+Fernanda Martinez,EMP-224,Senior Software Engineer,Mexico,585000,MXN
+Patricia Torres,EMP-225,Data Scientist,Mexico,765000,MXN
+Carlos Ramirez,EMP-226,Engineering Manager,Mexico,1160000,MXN
+Francisco Guerrero,EMP-227,ML Engineer,Mexico,535000,MXN
+Jose Cruz,EMP-228,HR Manager,Mexico,435000,MXN
+Fernando Gonzalez,EMP-229,DevOps Engineer,Mexico,545000,MXN
+Guadalupe Silva,EMP-230,Financial Analyst,Mexico,415000,MXN
+Guadalupe Herrera,EMP-231,DevOps Engineer,Mexico,525000,MXN
+Monica Herrera,EMP-232,Senior Software Engineer,Mexico,495000,MXN
+Rafael Morales,EMP-233,Software Engineer,Mexico,415000,MXN
+Francisco Perez,EMP-234,Data Analyst,Mexico,290000,MXN
+Juan Martinez,EMP-235,Product Manager,Mexico,620000,MXN
+Rosa Castillo,EMP-236,Software Engineer,Mexico,350000,MXN
+Fernanda Nunez,EMP-237,Senior Software Engineer,Mexico,670000,MXN
+Eduardo Rodriguez,EMP-238,Software Engineer,Mexico,385000,MXN
+Manuel Marin,EMP-239,Data Analyst,Mexico,370000,MXN
+Adriana Alvarez,EMP-240,Software Engineer,Mexico,355000,MXN
+Adriana Ortiz,EMP-241,DevOps Engineer,Mexico,595000,MXN
+Gabriela Vazquez,EMP-242,Software Engineer,Mexico,520000,MXN
+Alejandra Alvarez,EMP-243,Senior Software Engineer,Mexico,610000,MXN
+Patricia Aguilar,EMP-244,Senior Software Engineer,Mexico,525000,MXN
+Rosa Nunez,EMP-245,Data Analyst,Mexico,270000,MXN
+Juan Gutierrez,EMP-246,Product Manager,Mexico,610000,MXN
+Luis Contreras,EMP-247,ML Engineer,Mexico,715000,MXN
+Martha Vazquez,EMP-248,Engineering Manager,Mexico,1065000,MXN
+Andres Ramirez,EMP-249,Software Engineer,Mexico,390000,MXN
+Gabriela Martinez,EMP-250,HR Manager,Mexico,465000,MXN
+Jorge Ortiz,EMP-251,Product Manager,Mexico,620000,MXN
+Diego Ramirez,EMP-252,Data Analyst,Mexico,340000,MXN
+Laura Delgado,EMP-253,Sales Manager,Mexico,520000,MXN
+Roberto Alvarez,EMP-254,Senior Software Engineer,Mexico,755000,MXN
+Rafael Mendoza,EMP-255,Financial Analyst,Mexico,445000,MXN
+Miguel Cruz,EMP-256,Data Scientist,Mexico,640000,MXN
+Sofia Rios,EMP-257,Senior Software Engineer,Mexico,595000,MXN
+Jose Alvarez,EMP-258,Engineering Manager,Mexico,1170000,MXN
+Andres Cabrera,EMP-259,Data Scientist,Mexico,545000,MXN
+Laura Perez,EMP-260,DevOps Engineer,Mexico,595000,MXN
+Elena Rios,EMP-261,Data Scientist,Mexico,535000,MXN
+Miguel Medina,EMP-262,DevOps Engineer,Mexico,685000,MXN
+Fernanda Sanchez,EMP-263,Senior Software Engineer,Mexico,540000,MXN
+Antonio Marin,EMP-264,Financial Analyst,Mexico,310000,MXN
+Paola Ramirez,EMP-265,Senior Software Engineer,Mexico,600000,MXN
+Paola Vargas,EMP-266,Data Analyst,Mexico,305000,MXN
+Fernanda Perez,EMP-267,Product Manager,Mexico,760000,MXN
+Gabriel Martinez,EMP-268,DevOps Engineer,Mexico,600000,MXN
+Gabriela Jimenez,EMP-269,Senior Software Engineer,Mexico,725000,MXN
+Laura Herrera,EMP-270,Software Engineer,Mexico,465000,MXN
+Luis Gutierrez,EMP-271,DevOps Engineer,Mexico,505000,MXN
+Sergio Contreras,EMP-272,Financial Analyst,Mexico,510000,MXN
+Guadalupe Jimenez,EMP-273,Software Engineer,Mexico,520000,MXN
+Sergio Gonzalez,EMP-274,Senior Product Manager,Mexico,1050000,MXN
+Silvia Reyes,EMP-275,ML Engineer,Mexico,745000,MXN
+Fernando Contreras,EMP-276,Senior Software Engineer,Mexico,465000,MXN
+Fernando Ramirez,EMP-277,Sales Manager,Mexico,530000,MXN
+Alejandro Garcia,EMP-278,Engineering Manager,Mexico,1030000,MXN
+Manuel Cabrera,EMP-279,Data Analyst,Mexico,275000,MXN
+Luis Ramirez,EMP-280,Software Engineer,Mexico,415000,MXN
+Miguel Aguilar,EMP-281,Data Scientist,Mexico,560000,MXN
+Silvia Perez,EMP-282,Data Analyst,Mexico,290000,MXN
+Elena Martinez,EMP-283,Senior Software Engineer,Mexico,680000,MXN
+Daniela Chavez,EMP-284,HR Manager,Mexico,440000,MXN
+Luis Aguilar,EMP-285,Financial Analyst,Mexico,455000,MXN
+Francisco Marin,EMP-286,Data Analyst,Mexico,325000,MXN
+Martha Cruz,EMP-287,Data Analyst,Mexico,235000,MXN
+Silvia Rios,EMP-288,Senior Software Engineer,Mexico,675000,MXN
+Martha Delgado,EMP-289,Data Analyst,Mexico,270000,MXN
+Alejandra Perez,EMP-290,Data Scientist,Mexico,655000,MXN
+Carmen Reyes,EMP-291,Software Engineer,Mexico,350000,MXN
+Fernanda Mendoza,EMP-292,HR Manager,Mexico,535000,MXN
+Francisco Ramos,EMP-293,Data Analyst,Mexico,285000,MXN
+Laura Cruz,EMP-294,DevOps Engineer,Mexico,600000,MXN
+Jorge Rodriguez,EMP-295,Data Scientist,Mexico,470000,MXN
+Laura Ramirez,EMP-296,Software Engineer,Mexico,375000,MXN
+Carmen Rios,EMP-297,ML Engineer,Mexico,605000,MXN
+Rosa Rojas,EMP-298,Software Engineer,Mexico,455000,MXN
+Rafael Contreras,EMP-299,Product Manager,Mexico,620000,MXN
+Veronica Reyes,EMP-300,Software Engineer,Mexico,295000,MXN

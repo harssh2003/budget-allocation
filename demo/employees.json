@@ -1,0 +1,2402 @@
+[
+  {
+    "Name": "Andrew Anderson",
+    "Employee_ID": "EMP-001",
+    "Role": "DevOps Engineer",
+    "Country": "USA",
+    "Salary": 105500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Ashley Garcia",
+    "Employee_ID": "EMP-002",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 106500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "William Wilson",
+    "Employee_ID": "EMP-003",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 91500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Emily Gonzalez",
+    "Employee_ID": "EMP-004",
+    "Role": "DevOps Engineer",
+    "Country": "USA",
+    "Salary": 130000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Susan Anderson",
+    "Employee_ID": "EMP-005",
+    "Role": "Product Manager",
+    "Country": "USA",
+    "Salary": 128000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "James Hernandez",
+    "Employee_ID": "EMP-006",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 154500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Christopher Wilson",
+    "Employee_ID": "EMP-007",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 176500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "William Harris",
+    "Employee_ID": "EMP-008",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 124500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Kimberly Taylor",
+    "Employee_ID": "EMP-009",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 125000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Ashley Davis",
+    "Employee_ID": "EMP-010",
+    "Role": "Product Manager",
+    "Country": "USA",
+    "Salary": 160500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Emily Jackson",
+    "Employee_ID": "EMP-011",
+    "Role": "Data Analyst",
+    "Country": "USA",
+    "Salary": 81500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Linda Torres",
+    "Employee_ID": "EMP-012",
+    "Role": "DevOps Engineer",
+    "Country": "USA",
+    "Salary": 108000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Steven Jackson",
+    "Employee_ID": "EMP-013",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 137500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Brian Robinson",
+    "Employee_ID": "EMP-014",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 116000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Linda Thompson",
+    "Employee_ID": "EMP-015",
+    "Role": "Data Analyst",
+    "Country": "USA",
+    "Salary": 66000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "David Hill",
+    "Employee_ID": "EMP-016",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 151000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Andrew Hernandez",
+    "Employee_ID": "EMP-017",
+    "Role": "ML Engineer",
+    "Country": "USA",
+    "Salary": 147000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Emily Anderson",
+    "Employee_ID": "EMP-018",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 154000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "John Anderson",
+    "Employee_ID": "EMP-019",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 126000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Barbara Moore",
+    "Employee_ID": "EMP-020",
+    "Role": "Engineering Manager",
+    "Country": "USA",
+    "Salary": 163500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Amanda Lee",
+    "Employee_ID": "EMP-021",
+    "Role": "HR Manager",
+    "Country": "USA",
+    "Salary": 90000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Karen Martinez",
+    "Employee_ID": "EMP-022",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 116500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Emily Wright",
+    "Employee_ID": "EMP-023",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 134500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Michelle Sanchez",
+    "Employee_ID": "EMP-024",
+    "Role": "ML Engineer",
+    "Country": "USA",
+    "Salary": 142000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Thomas Allen",
+    "Employee_ID": "EMP-025",
+    "Role": "Financial Analyst",
+    "Country": "USA",
+    "Salary": 81500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Joseph Martinez",
+    "Employee_ID": "EMP-026",
+    "Role": "Senior Product Manager",
+    "Country": "USA",
+    "Salary": 175500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Jessica Hill",
+    "Employee_ID": "EMP-027",
+    "Role": "Engineering Manager",
+    "Country": "USA",
+    "Salary": 163500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Karen King",
+    "Employee_ID": "EMP-028",
+    "Role": "Data Analyst",
+    "Country": "USA",
+    "Salary": 67000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "James Davis",
+    "Employee_ID": "EMP-029",
+    "Role": "ML Engineer",
+    "Country": "USA",
+    "Salary": 159000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Brian Perez",
+    "Employee_ID": "EMP-030",
+    "Role": "ML Engineer",
+    "Country": "USA",
+    "Salary": 128000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Kevin Allen",
+    "Employee_ID": "EMP-031",
+    "Role": "Data Analyst",
+    "Country": "USA",
+    "Salary": 79500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Richard Martin",
+    "Employee_ID": "EMP-032",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 142500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Anthony Martinez",
+    "Employee_ID": "EMP-033",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 120500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Sandra Smith",
+    "Employee_ID": "EMP-034",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 106500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Joseph White",
+    "Employee_ID": "EMP-035",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 145500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "John Thomas",
+    "Employee_ID": "EMP-036",
+    "Role": "Engineering Manager",
+    "Country": "USA",
+    "Salary": 214500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "William Young",
+    "Employee_ID": "EMP-037",
+    "Role": "Financial Analyst",
+    "Country": "USA",
+    "Salary": 92500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Ashley Rodriguez",
+    "Employee_ID": "EMP-038",
+    "Role": "Financial Analyst",
+    "Country": "USA",
+    "Salary": 70500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Emily Hernandez",
+    "Employee_ID": "EMP-039",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 116500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Jessica Wilson",
+    "Employee_ID": "EMP-040",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 135000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Anthony Martin",
+    "Employee_ID": "EMP-041",
+    "Role": "Senior Product Manager",
+    "Country": "USA",
+    "Salary": 166000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Linda Lewis",
+    "Employee_ID": "EMP-042",
+    "Role": "DevOps Engineer",
+    "Country": "USA",
+    "Salary": 142000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "David Perez",
+    "Employee_ID": "EMP-043",
+    "Role": "Data Analyst",
+    "Country": "USA",
+    "Salary": 58500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Michelle Anderson",
+    "Employee_ID": "EMP-044",
+    "Role": "ML Engineer",
+    "Country": "USA",
+    "Salary": 114500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "David Williams",
+    "Employee_ID": "EMP-045",
+    "Role": "Product Manager",
+    "Country": "USA",
+    "Salary": 149000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Andrew Moore",
+    "Employee_ID": "EMP-046",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 110000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Thomas Torres",
+    "Employee_ID": "EMP-047",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 148000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Nancy Clark",
+    "Employee_ID": "EMP-048",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 130500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Jessica Thompson",
+    "Employee_ID": "EMP-049",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 99000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "John Miller",
+    "Employee_ID": "EMP-050",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 105000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Richard Thomas",
+    "Employee_ID": "EMP-051",
+    "Role": "Product Manager",
+    "Country": "USA",
+    "Salary": 118000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Thomas Ramirez",
+    "Employee_ID": "EMP-052",
+    "Role": "ML Engineer",
+    "Country": "USA",
+    "Salary": 133000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "David Lewis",
+    "Employee_ID": "EMP-053",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 140500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Richard Brown",
+    "Employee_ID": "EMP-054",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 116500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "James Garcia",
+    "Employee_ID": "EMP-055",
+    "Role": "ML Engineer",
+    "Country": "USA",
+    "Salary": 180500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Daniel Clark",
+    "Employee_ID": "EMP-056",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 109500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Barbara Brown",
+    "Employee_ID": "EMP-057",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 129000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Karen Jackson",
+    "Employee_ID": "EMP-058",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 99000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Emily Young",
+    "Employee_ID": "EMP-059",
+    "Role": "Financial Analyst",
+    "Country": "USA",
+    "Salary": 71500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "John Nguyen",
+    "Employee_ID": "EMP-060",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 157000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Mary Brown",
+    "Employee_ID": "EMP-061",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 80000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Sandra Hernandez",
+    "Employee_ID": "EMP-062",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 105000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Matthew Jones",
+    "Employee_ID": "EMP-063",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 129000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Andrew Sanchez",
+    "Employee_ID": "EMP-064",
+    "Role": "Product Manager",
+    "Country": "USA",
+    "Salary": 114500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Andrew Nguyen",
+    "Employee_ID": "EMP-065",
+    "Role": "HR Manager",
+    "Country": "USA",
+    "Salary": 102000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Susan Nguyen",
+    "Employee_ID": "EMP-066",
+    "Role": "DevOps Engineer",
+    "Country": "USA",
+    "Salary": 123000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Kevin Wilson",
+    "Employee_ID": "EMP-067",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 153000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Kevin Sanchez",
+    "Employee_ID": "EMP-068",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 127000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Karen Lee",
+    "Employee_ID": "EMP-069",
+    "Role": "DevOps Engineer",
+    "Country": "USA",
+    "Salary": 145000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "James Robinson",
+    "Employee_ID": "EMP-070",
+    "Role": "Financial Analyst",
+    "Country": "USA",
+    "Salary": 85000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Richard Jones",
+    "Employee_ID": "EMP-071",
+    "Role": "ML Engineer",
+    "Country": "USA",
+    "Salary": 150500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Thomas Thompson",
+    "Employee_ID": "EMP-072",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 145500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Linda Jackson",
+    "Employee_ID": "EMP-073",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 96500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Justin Flores",
+    "Employee_ID": "EMP-074",
+    "Role": "Engineering Manager",
+    "Country": "USA",
+    "Salary": 231000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Emily Martin",
+    "Employee_ID": "EMP-075",
+    "Role": "Engineering Manager",
+    "Country": "USA",
+    "Salary": 221000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Thomas Taylor",
+    "Employee_ID": "EMP-076",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 85000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Emily Martinez",
+    "Employee_ID": "EMP-077",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 93000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Patricia Wilson",
+    "Employee_ID": "EMP-078",
+    "Role": "DevOps Engineer",
+    "Country": "USA",
+    "Salary": 128500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Margaret Young",
+    "Employee_ID": "EMP-079",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 101000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "John Garcia",
+    "Employee_ID": "EMP-080",
+    "Role": "HR Manager",
+    "Country": "USA",
+    "Salary": 103000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Patricia Rodriguez",
+    "Employee_ID": "EMP-081",
+    "Role": "Engineering Manager",
+    "Country": "USA",
+    "Salary": 196500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Sarah Scott",
+    "Employee_ID": "EMP-082",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 155000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Joseph Jones",
+    "Employee_ID": "EMP-083",
+    "Role": "ML Engineer",
+    "Country": "USA",
+    "Salary": 183000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Christopher Wright",
+    "Employee_ID": "EMP-084",
+    "Role": "Product Manager",
+    "Country": "USA",
+    "Salary": 108000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Jessica Rodriguez",
+    "Employee_ID": "EMP-085",
+    "Role": "Data Analyst",
+    "Country": "USA",
+    "Salary": 60000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Robert Thompson",
+    "Employee_ID": "EMP-086",
+    "Role": "Data Analyst",
+    "Country": "USA",
+    "Salary": 66000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Richard Thompson",
+    "Employee_ID": "EMP-087",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 160000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Susan Flores",
+    "Employee_ID": "EMP-088",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 122000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Matthew Clark",
+    "Employee_ID": "EMP-089",
+    "Role": "Financial Analyst",
+    "Country": "USA",
+    "Salary": 64500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Patricia Clark",
+    "Employee_ID": "EMP-090",
+    "Role": "Product Manager",
+    "Country": "USA",
+    "Salary": 145000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Daniel Miller",
+    "Employee_ID": "EMP-091",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 105500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Nancy Anderson",
+    "Employee_ID": "EMP-092",
+    "Role": "Software Engineer",
+    "Country": "USA",
+    "Salary": 90000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Jennifer Martin",
+    "Employee_ID": "EMP-093",
+    "Role": "HR Manager",
+    "Country": "USA",
+    "Salary": 111000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Steven Johnson",
+    "Employee_ID": "EMP-094",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 117000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Margaret Sanchez",
+    "Employee_ID": "EMP-095",
+    "Role": "Data Analyst",
+    "Country": "USA",
+    "Salary": 76500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Patricia Johnson",
+    "Employee_ID": "EMP-096",
+    "Role": "Sales Manager",
+    "Country": "USA",
+    "Salary": 94000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Matthew Nguyen",
+    "Employee_ID": "EMP-097",
+    "Role": "Financial Analyst",
+    "Country": "USA",
+    "Salary": 102000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Richard Hill",
+    "Employee_ID": "EMP-098",
+    "Role": "Senior Software Engineer",
+    "Country": "USA",
+    "Salary": 141500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Mary Ramirez",
+    "Employee_ID": "EMP-099",
+    "Role": "Product Manager",
+    "Country": "USA",
+    "Salary": 134500,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Elizabeth Torres",
+    "Employee_ID": "EMP-100",
+    "Role": "Data Scientist",
+    "Country": "USA",
+    "Salary": 113000,
+    "Currency": "USD"
+  },
+  {
+    "Name": "Riya Sharma",
+    "Employee_ID": "EMP-101",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1040000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Rahul Mehta",
+    "Employee_ID": "EMP-102",
+    "Role": "Engineering Manager",
+    "Country": "India",
+    "Salary": 3780000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ananya Khanna",
+    "Employee_ID": "EMP-103",
+    "Role": "Financial Analyst",
+    "Country": "India",
+    "Salary": 970000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Manoj Mishra",
+    "Employee_ID": "EMP-104",
+    "Role": "Sales Manager",
+    "Country": "India",
+    "Salary": 1260000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ishita Malhotra",
+    "Employee_ID": "EMP-105",
+    "Role": "Data Analyst",
+    "Country": "India",
+    "Salary": 780000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Aadhya Pillai",
+    "Employee_ID": "EMP-106",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1100000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Nisha Sharma",
+    "Employee_ID": "EMP-107",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 1860000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Deepa Arora",
+    "Employee_ID": "EMP-108",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1130000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Neha Banerjee",
+    "Employee_ID": "EMP-109",
+    "Role": "Data Scientist",
+    "Country": "India",
+    "Salary": 1810000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Rohan Patel",
+    "Employee_ID": "EMP-110",
+    "Role": "Engineering Manager",
+    "Country": "India",
+    "Salary": 3630000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Swati Desai",
+    "Employee_ID": "EMP-111",
+    "Role": "DevOps Engineer",
+    "Country": "India",
+    "Salary": 1250000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ramesh Kapoor",
+    "Employee_ID": "EMP-112",
+    "Role": "Financial Analyst",
+    "Country": "India",
+    "Salary": 920000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vivaan Gupta",
+    "Employee_ID": "EMP-113",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 890000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Arjun Subramanian",
+    "Employee_ID": "EMP-114",
+    "Role": "Data Scientist",
+    "Country": "India",
+    "Salary": 1740000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Rahul Agarwal",
+    "Employee_ID": "EMP-115",
+    "Role": "DevOps Engineer",
+    "Country": "India",
+    "Salary": 1600000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Aarav Reddy",
+    "Employee_ID": "EMP-116",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 2270000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Meera Subramanian",
+    "Employee_ID": "EMP-117",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 1590000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ayaan Subramanian",
+    "Employee_ID": "EMP-118",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 1700000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Meera Saxena",
+    "Employee_ID": "EMP-119",
+    "Role": "Data Scientist",
+    "Country": "India",
+    "Salary": 1880000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Neha Khanna",
+    "Employee_ID": "EMP-120",
+    "Role": "Financial Analyst",
+    "Country": "India",
+    "Salary": 1220000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Riya Saxena",
+    "Employee_ID": "EMP-121",
+    "Role": "HR Manager",
+    "Country": "India",
+    "Salary": 1200000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Sneha Krishnan",
+    "Employee_ID": "EMP-122",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 900000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Anil Tiwari",
+    "Employee_ID": "EMP-123",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 1990000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Neha Singh",
+    "Employee_ID": "EMP-124",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 2200000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ananya Joshi",
+    "Employee_ID": "EMP-125",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 2430000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ishaan Mukherjee",
+    "Employee_ID": "EMP-126",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 970000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Amit Singh",
+    "Employee_ID": "EMP-127",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 980000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Pooja Trivedi",
+    "Employee_ID": "EMP-128",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 1610000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Aadhya Chawla",
+    "Employee_ID": "EMP-129",
+    "Role": "Engineering Manager",
+    "Country": "India",
+    "Salary": 4630000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Kiran Agarwal",
+    "Employee_ID": "EMP-130",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1020000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Manoj Agarwal",
+    "Employee_ID": "EMP-131",
+    "Role": "Financial Analyst",
+    "Country": "India",
+    "Salary": 1250000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Kavya Pandey",
+    "Employee_ID": "EMP-132",
+    "Role": "Financial Analyst",
+    "Country": "India",
+    "Salary": 1180000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Lakshmi Mukherjee",
+    "Employee_ID": "EMP-133",
+    "Role": "ML Engineer",
+    "Country": "India",
+    "Salary": 2160000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Anjali Verma",
+    "Employee_ID": "EMP-134",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 1920000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ishita Menon",
+    "Employee_ID": "EMP-135",
+    "Role": "DevOps Engineer",
+    "Country": "India",
+    "Salary": 1950000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Swati Pandey",
+    "Employee_ID": "EMP-136",
+    "Role": "HR Manager",
+    "Country": "India",
+    "Salary": 900000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Kiran Verma",
+    "Employee_ID": "EMP-137",
+    "Role": "Data Analyst",
+    "Country": "India",
+    "Salary": 600000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Pooja Pillai",
+    "Employee_ID": "EMP-138",
+    "Role": "Data Analyst",
+    "Country": "India",
+    "Salary": 580000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Amit Subramanian",
+    "Employee_ID": "EMP-139",
+    "Role": "Data Analyst",
+    "Country": "India",
+    "Salary": 700000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Aadhya Chauhan",
+    "Employee_ID": "EMP-140",
+    "Role": "Senior Product Manager",
+    "Country": "India",
+    "Salary": 3520000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vijay Patel",
+    "Employee_ID": "EMP-141",
+    "Role": "Engineering Manager",
+    "Country": "India",
+    "Salary": 3830000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vihaan Shah",
+    "Employee_ID": "EMP-142",
+    "Role": "Product Manager",
+    "Country": "India",
+    "Salary": 1920000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Aditya Verma",
+    "Employee_ID": "EMP-143",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1420000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vivaan Khanna",
+    "Employee_ID": "EMP-144",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 830000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ayaan Bhatia",
+    "Employee_ID": "EMP-145",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1420000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vijay Mehta",
+    "Employee_ID": "EMP-146",
+    "Role": "Data Scientist",
+    "Country": "India",
+    "Salary": 1540000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ayaan Menon",
+    "Employee_ID": "EMP-147",
+    "Role": "DevOps Engineer",
+    "Country": "India",
+    "Salary": 2190000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vivaan Kapoor",
+    "Employee_ID": "EMP-148",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1070000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Aadhya Bhatt",
+    "Employee_ID": "EMP-149",
+    "Role": "HR Manager",
+    "Country": "India",
+    "Salary": 1600000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Deepa Das",
+    "Employee_ID": "EMP-150",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 790000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Lakshmi Rao",
+    "Employee_ID": "EMP-151",
+    "Role": "Senior Product Manager",
+    "Country": "India",
+    "Salary": 3580000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Aditya Shah",
+    "Employee_ID": "EMP-152",
+    "Role": "ML Engineer",
+    "Country": "India",
+    "Salary": 2210000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Arjun Mishra",
+    "Employee_ID": "EMP-153",
+    "Role": "DevOps Engineer",
+    "Country": "India",
+    "Salary": 1730000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Kavya Yadav",
+    "Employee_ID": "EMP-154",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 790000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Pooja Iyer",
+    "Employee_ID": "EMP-155",
+    "Role": "Financial Analyst",
+    "Country": "India",
+    "Salary": 1020000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Anil Khanna",
+    "Employee_ID": "EMP-156",
+    "Role": "Product Manager",
+    "Country": "India",
+    "Salary": 2470000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Sneha Subramanian",
+    "Employee_ID": "EMP-157",
+    "Role": "ML Engineer",
+    "Country": "India",
+    "Salary": 2110000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Anil Joshi",
+    "Employee_ID": "EMP-158",
+    "Role": "Product Manager",
+    "Country": "India",
+    "Salary": 2530000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Sai Chauhan",
+    "Employee_ID": "EMP-159",
+    "Role": "Engineering Manager",
+    "Country": "India",
+    "Salary": 4450000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Pooja Bhatia",
+    "Employee_ID": "EMP-160",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 2100000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vivaan Yadav",
+    "Employee_ID": "EMP-161",
+    "Role": "Data Analyst",
+    "Country": "India",
+    "Salary": 910000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vijay Desai",
+    "Employee_ID": "EMP-162",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 910000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Anil Saxena",
+    "Employee_ID": "EMP-163",
+    "Role": "DevOps Engineer",
+    "Country": "India",
+    "Salary": 1080000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Sai Das",
+    "Employee_ID": "EMP-164",
+    "Role": "Financial Analyst",
+    "Country": "India",
+    "Salary": 1160000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ramesh Rathore",
+    "Employee_ID": "EMP-165",
+    "Role": "Data Scientist",
+    "Country": "India",
+    "Salary": 1930000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vivaan Patel",
+    "Employee_ID": "EMP-166",
+    "Role": "Data Scientist",
+    "Country": "India",
+    "Salary": 1650000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Deepa Mehta",
+    "Employee_ID": "EMP-167",
+    "Role": "Data Analyst",
+    "Country": "India",
+    "Salary": 750000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ananya Shah",
+    "Employee_ID": "EMP-168",
+    "Role": "ML Engineer",
+    "Country": "India",
+    "Salary": 2410000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vijay Mukherjee",
+    "Employee_ID": "EMP-169",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 1690000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ayaan Pandey",
+    "Employee_ID": "EMP-170",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1420000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Rahul Banerjee",
+    "Employee_ID": "EMP-171",
+    "Role": "Product Manager",
+    "Country": "India",
+    "Salary": 2380000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Deepa Tiwari",
+    "Employee_ID": "EMP-172",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 2080000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Rahul Malhotra",
+    "Employee_ID": "EMP-173",
+    "Role": "Financial Analyst",
+    "Country": "India",
+    "Salary": 930000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Aarav Pandey",
+    "Employee_ID": "EMP-174",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 810000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vihaan Saxena",
+    "Employee_ID": "EMP-175",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 920000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Anjali Reddy",
+    "Employee_ID": "EMP-176",
+    "Role": "Financial Analyst",
+    "Country": "India",
+    "Salary": 1270000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Sneha Rathore",
+    "Employee_ID": "EMP-177",
+    "Role": "ML Engineer",
+    "Country": "India",
+    "Salary": 2110000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vihaan Bose",
+    "Employee_ID": "EMP-178",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1400000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Arjun Bhatt",
+    "Employee_ID": "EMP-179",
+    "Role": "Data Scientist",
+    "Country": "India",
+    "Salary": 1800000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Vihaan Iyer",
+    "Employee_ID": "EMP-180",
+    "Role": "ML Engineer",
+    "Country": "India",
+    "Salary": 1810000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Manoj Patel",
+    "Employee_ID": "EMP-181",
+    "Role": "ML Engineer",
+    "Country": "India",
+    "Salary": 3090000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Kavya Arora",
+    "Employee_ID": "EMP-182",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1090000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Meera Agarwal",
+    "Employee_ID": "EMP-183",
+    "Role": "DevOps Engineer",
+    "Country": "India",
+    "Salary": 1560000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Deepa Naidu",
+    "Employee_ID": "EMP-184",
+    "Role": "Data Analyst",
+    "Country": "India",
+    "Salary": 700000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Swati Reddy",
+    "Employee_ID": "EMP-185",
+    "Role": "DevOps Engineer",
+    "Country": "India",
+    "Salary": 2140000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Amit Bose",
+    "Employee_ID": "EMP-186",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1130000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Karthik Saxena",
+    "Employee_ID": "EMP-187",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 760000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Neha Arora",
+    "Employee_ID": "EMP-188",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1010000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Sanjay Malhotra",
+    "Employee_ID": "EMP-189",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1160000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Suresh Bose",
+    "Employee_ID": "EMP-190",
+    "Role": "Data Scientist",
+    "Country": "India",
+    "Salary": 2080000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Rahul Naidu",
+    "Employee_ID": "EMP-191",
+    "Role": "DevOps Engineer",
+    "Country": "India",
+    "Salary": 1280000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ishaan Chauhan",
+    "Employee_ID": "EMP-192",
+    "Role": "Senior Software Engineer",
+    "Country": "India",
+    "Salary": 2330000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Rohan Kapoor",
+    "Employee_ID": "EMP-193",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1090000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Sanjay Krishnan",
+    "Employee_ID": "EMP-194",
+    "Role": "Engineering Manager",
+    "Country": "India",
+    "Salary": 3420000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Ishita Chauhan",
+    "Employee_ID": "EMP-195",
+    "Role": "Product Manager",
+    "Country": "India",
+    "Salary": 2150000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Sai Arora",
+    "Employee_ID": "EMP-196",
+    "Role": "Data Scientist",
+    "Country": "India",
+    "Salary": 1370000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Priya Arora",
+    "Employee_ID": "EMP-197",
+    "Role": "Data Analyst",
+    "Country": "India",
+    "Salary": 680000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Kiran Chawla",
+    "Employee_ID": "EMP-198",
+    "Role": "Software Engineer",
+    "Country": "India",
+    "Salary": 1420000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Anil Bhatia",
+    "Employee_ID": "EMP-199",
+    "Role": "Financial Analyst",
+    "Country": "India",
+    "Salary": 790000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Sneha Tiwari",
+    "Employee_ID": "EMP-200",
+    "Role": "Senior Product Manager",
+    "Country": "India",
+    "Salary": 3390000,
+    "Currency": "INR"
+  },
+  {
+    "Name": "Eduardo Cabrera",
+    "Employee_ID": "EMP-201",
+    "Role": "HR Manager",
+    "Country": "Mexico",
+    "Salary": 440000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Jorge Aguilar",
+    "Employee_ID": "EMP-202",
+    "Role": "Engineering Manager",
+    "Country": "Mexico",
+    "Salary": 1110000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Francisco Flores",
+    "Employee_ID": "EMP-203",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 585000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Rafael Gutierrez",
+    "Employee_ID": "EMP-204",
+    "Role": "Product Manager",
+    "Country": "Mexico",
+    "Salary": 755000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Adriana Rodriguez",
+    "Employee_ID": "EMP-205",
+    "Role": "ML Engineer",
+    "Country": "Mexico",
+    "Salary": 600000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Sofia Salazar",
+    "Employee_ID": "EMP-206",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 715000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Paola Medina",
+    "Employee_ID": "EMP-207",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 345000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Laura Silva",
+    "Employee_ID": "EMP-208",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 420000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Luis Reyes",
+    "Employee_ID": "EMP-209",
+    "Role": "DevOps Engineer",
+    "Country": "Mexico",
+    "Salary": 500000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Rafael Guerrero",
+    "Employee_ID": "EMP-210",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 460000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Juan Contreras",
+    "Employee_ID": "EMP-211",
+    "Role": "Data Scientist",
+    "Country": "Mexico",
+    "Salary": 655000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Antonio Rios",
+    "Employee_ID": "EMP-212",
+    "Role": "Product Manager",
+    "Country": "Mexico",
+    "Salary": 510000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Pablo Sanchez",
+    "Employee_ID": "EMP-213",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 290000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Fernando Marin",
+    "Employee_ID": "EMP-214",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 480000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Gabriel Vargas",
+    "Employee_ID": "EMP-215",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 720000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Manuel Medina",
+    "Employee_ID": "EMP-216",
+    "Role": "Financial Analyst",
+    "Country": "Mexico",
+    "Salary": 390000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Martha Salazar",
+    "Employee_ID": "EMP-217",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 330000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Miguel Ruiz",
+    "Employee_ID": "EMP-218",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 425000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Guadalupe Salazar",
+    "Employee_ID": "EMP-219",
+    "Role": "Sales Manager",
+    "Country": "Mexico",
+    "Salary": 470000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Antonio Cabrera",
+    "Employee_ID": "EMP-220",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 380000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Fernando Guerrero",
+    "Employee_ID": "EMP-221",
+    "Role": "DevOps Engineer",
+    "Country": "Mexico",
+    "Salary": 560000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Carmen Herrera",
+    "Employee_ID": "EMP-222",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 595000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Diego Jimenez",
+    "Employee_ID": "EMP-223",
+    "Role": "Financial Analyst",
+    "Country": "Mexico",
+    "Salary": 390000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Fernanda Martinez",
+    "Employee_ID": "EMP-224",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 585000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Patricia Torres",
+    "Employee_ID": "EMP-225",
+    "Role": "Data Scientist",
+    "Country": "Mexico",
+    "Salary": 765000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Carlos Ramirez",
+    "Employee_ID": "EMP-226",
+    "Role": "Engineering Manager",
+    "Country": "Mexico",
+    "Salary": 1160000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Francisco Guerrero",
+    "Employee_ID": "EMP-227",
+    "Role": "ML Engineer",
+    "Country": "Mexico",
+    "Salary": 535000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Jose Cruz",
+    "Employee_ID": "EMP-228",
+    "Role": "HR Manager",
+    "Country": "Mexico",
+    "Salary": 435000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Fernando Gonzalez",
+    "Employee_ID": "EMP-229",
+    "Role": "DevOps Engineer",
+    "Country": "Mexico",
+    "Salary": 545000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Guadalupe Silva",
+    "Employee_ID": "EMP-230",
+    "Role": "Financial Analyst",
+    "Country": "Mexico",
+    "Salary": 415000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Guadalupe Herrera",
+    "Employee_ID": "EMP-231",
+    "Role": "DevOps Engineer",
+    "Country": "Mexico",
+    "Salary": 525000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Monica Herrera",
+    "Employee_ID": "EMP-232",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 495000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Rafael Morales",
+    "Employee_ID": "EMP-233",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 415000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Francisco Perez",
+    "Employee_ID": "EMP-234",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 290000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Juan Martinez",
+    "Employee_ID": "EMP-235",
+    "Role": "Product Manager",
+    "Country": "Mexico",
+    "Salary": 620000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Rosa Castillo",
+    "Employee_ID": "EMP-236",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 350000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Fernanda Nunez",
+    "Employee_ID": "EMP-237",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 670000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Eduardo Rodriguez",
+    "Employee_ID": "EMP-238",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 385000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Manuel Marin",
+    "Employee_ID": "EMP-239",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 370000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Adriana Alvarez",
+    "Employee_ID": "EMP-240",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 355000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Adriana Ortiz",
+    "Employee_ID": "EMP-241",
+    "Role": "DevOps Engineer",
+    "Country": "Mexico",
+    "Salary": 595000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Gabriela Vazquez",
+    "Employee_ID": "EMP-242",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 520000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Alejandra Alvarez",
+    "Employee_ID": "EMP-243",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 610000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Patricia Aguilar",
+    "Employee_ID": "EMP-244",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 525000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Rosa Nunez",
+    "Employee_ID": "EMP-245",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 270000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Juan Gutierrez",
+    "Employee_ID": "EMP-246",
+    "Role": "Product Manager",
+    "Country": "Mexico",
+    "Salary": 610000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Luis Contreras",
+    "Employee_ID": "EMP-247",
+    "Role": "ML Engineer",
+    "Country": "Mexico",
+    "Salary": 715000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Martha Vazquez",
+    "Employee_ID": "EMP-248",
+    "Role": "Engineering Manager",
+    "Country": "Mexico",
+    "Salary": 1065000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Andres Ramirez",
+    "Employee_ID": "EMP-249",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 390000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Gabriela Martinez",
+    "Employee_ID": "EMP-250",
+    "Role": "HR Manager",
+    "Country": "Mexico",
+    "Salary": 465000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Jorge Ortiz",
+    "Employee_ID": "EMP-251",
+    "Role": "Product Manager",
+    "Country": "Mexico",
+    "Salary": 620000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Diego Ramirez",
+    "Employee_ID": "EMP-252",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 340000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Laura Delgado",
+    "Employee_ID": "EMP-253",
+    "Role": "Sales Manager",
+    "Country": "Mexico",
+    "Salary": 520000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Roberto Alvarez",
+    "Employee_ID": "EMP-254",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 755000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Rafael Mendoza",
+    "Employee_ID": "EMP-255",
+    "Role": "Financial Analyst",
+    "Country": "Mexico",
+    "Salary": 445000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Miguel Cruz",
+    "Employee_ID": "EMP-256",
+    "Role": "Data Scientist",
+    "Country": "Mexico",
+    "Salary": 640000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Sofia Rios",
+    "Employee_ID": "EMP-257",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 595000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Jose Alvarez",
+    "Employee_ID": "EMP-258",
+    "Role": "Engineering Manager",
+    "Country": "Mexico",
+    "Salary": 1170000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Andres Cabrera",
+    "Employee_ID": "EMP-259",
+    "Role": "Data Scientist",
+    "Country": "Mexico",
+    "Salary": 545000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Laura Perez",
+    "Employee_ID": "EMP-260",
+    "Role": "DevOps Engineer",
+    "Country": "Mexico",
+    "Salary": 595000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Elena Rios",
+    "Employee_ID": "EMP-261",
+    "Role": "Data Scientist",
+    "Country": "Mexico",
+    "Salary": 535000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Miguel Medina",
+    "Employee_ID": "EMP-262",
+    "Role": "DevOps Engineer",
+    "Country": "Mexico",
+    "Salary": 685000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Fernanda Sanchez",
+    "Employee_ID": "EMP-263",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 540000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Antonio Marin",
+    "Employee_ID": "EMP-264",
+    "Role": "Financial Analyst",
+    "Country": "Mexico",
+    "Salary": 310000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Paola Ramirez",
+    "Employee_ID": "EMP-265",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 600000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Paola Vargas",
+    "Employee_ID": "EMP-266",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 305000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Fernanda Perez",
+    "Employee_ID": "EMP-267",
+    "Role": "Product Manager",
+    "Country": "Mexico",
+    "Salary": 760000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Gabriel Martinez",
+    "Employee_ID": "EMP-268",
+    "Role": "DevOps Engineer",
+    "Country": "Mexico",
+    "Salary": 600000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Gabriela Jimenez",
+    "Employee_ID": "EMP-269",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 725000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Laura Herrera",
+    "Employee_ID": "EMP-270",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 465000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Luis Gutierrez",
+    "Employee_ID": "EMP-271",
+    "Role": "DevOps Engineer",
+    "Country": "Mexico",
+    "Salary": 505000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Sergio Contreras",
+    "Employee_ID": "EMP-272",
+    "Role": "Financial Analyst",
+    "Country": "Mexico",
+    "Salary": 510000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Guadalupe Jimenez",
+    "Employee_ID": "EMP-273",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 520000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Sergio Gonzalez",
+    "Employee_ID": "EMP-274",
+    "Role": "Senior Product Manager",
+    "Country": "Mexico",
+    "Salary": 1050000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Silvia Reyes",
+    "Employee_ID": "EMP-275",
+    "Role": "ML Engineer",
+    "Country": "Mexico",
+    "Salary": 745000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Fernando Contreras",
+    "Employee_ID": "EMP-276",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 465000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Fernando Ramirez",
+    "Employee_ID": "EMP-277",
+    "Role": "Sales Manager",
+    "Country": "Mexico",
+    "Salary": 530000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Alejandro Garcia",
+    "Employee_ID": "EMP-278",
+    "Role": "Engineering Manager",
+    "Country": "Mexico",
+    "Salary": 1030000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Manuel Cabrera",
+    "Employee_ID": "EMP-279",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 275000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Luis Ramirez",
+    "Employee_ID": "EMP-280",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 415000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Miguel Aguilar",
+    "Employee_ID": "EMP-281",
+    "Role": "Data Scientist",
+    "Country": "Mexico",
+    "Salary": 560000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Silvia Perez",
+    "Employee_ID": "EMP-282",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 290000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Elena Martinez",
+    "Employee_ID": "EMP-283",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 680000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Daniela Chavez",
+    "Employee_ID": "EMP-284",
+    "Role": "HR Manager",
+    "Country": "Mexico",
+    "Salary": 440000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Luis Aguilar",
+    "Employee_ID": "EMP-285",
+    "Role": "Financial Analyst",
+    "Country": "Mexico",
+    "Salary": 455000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Francisco Marin",
+    "Employee_ID": "EMP-286",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 325000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Martha Cruz",
+    "Employee_ID": "EMP-287",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 235000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Silvia Rios",
+    "Employee_ID": "EMP-288",
+    "Role": "Senior Software Engineer",
+    "Country": "Mexico",
+    "Salary": 675000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Martha Delgado",
+    "Employee_ID": "EMP-289",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 270000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Alejandra Perez",
+    "Employee_ID": "EMP-290",
+    "Role": "Data Scientist",
+    "Country": "Mexico",
+    "Salary": 655000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Carmen Reyes",
+    "Employee_ID": "EMP-291",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 350000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Fernanda Mendoza",
+    "Employee_ID": "EMP-292",
+    "Role": "HR Manager",
+    "Country": "Mexico",
+    "Salary": 535000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Francisco Ramos",
+    "Employee_ID": "EMP-293",
+    "Role": "Data Analyst",
+    "Country": "Mexico",
+    "Salary": 285000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Laura Cruz",
+    "Employee_ID": "EMP-294",
+    "Role": "DevOps Engineer",
+    "Country": "Mexico",
+    "Salary": 600000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Jorge Rodriguez",
+    "Employee_ID": "EMP-295",
+    "Role": "Data Scientist",
+    "Country": "Mexico",
+    "Salary": 470000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Laura Ramirez",
+    "Employee_ID": "EMP-296",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 375000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Carmen Rios",
+    "Employee_ID": "EMP-297",
+    "Role": "ML Engineer",
+    "Country": "Mexico",
+    "Salary": 605000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Rosa Rojas",
+    "Employee_ID": "EMP-298",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 455000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Rafael Contreras",
+    "Employee_ID": "EMP-299",
+    "Role": "Product Manager",
+    "Country": "Mexico",
+    "Salary": 620000,
+    "Currency": "MXN"
+  },
+  {
+    "Name": "Veronica Reyes",
+    "Employee_ID": "EMP-300",
+    "Role": "Software Engineer",
+    "Country": "Mexico",
+    "Salary": 295000,
+    "Currency": "MXN"
+  }
+]

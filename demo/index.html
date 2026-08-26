@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Budget Allocation</title>
+<link rel="stylesheet" href="src/ui/styles.css">
+</head>
+<body>
+<div class="sticky-bar" id="sticky-bar" aria-hidden="true">
+  <div class="sticky-bar-inner">
+    <span class="sticky-title">Budget Allocation</span>
+    <span class="sticky-meta" id="sticky-meta"></span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="masthead-text">
+      <h1>Budget Allocation</h1>
+      <p class="tagline">
+        Distribute an additional budget across a multi-currency workforce.
+        Every employee receives the same percentage increase, paid in their own currency.
+      </p>
+    </div>
+    <div class="masthead-aside">
+      <button type="button" class="badge" id="rate-badge" aria-expanded="false" aria-controls="assumptions"></button>
+      <div class="assumptions" id="assumptions" role="group" aria-labelledby="rate-badge" hidden></div>
+    </div>
+  </header>
+
+  <main>
+
+  <section class="section" aria-labelledby="budget-heading">
+    <p class="eyebrow" id="budget-heading">Additional budget</p>
+
+    <form id="budget-form" class="toolbar" novalidate>
+      <div class="field field-grow">
+        <label for="budget-amount">How much are you adding?</label>
+        <div class="input-group" id="budget-group">
+          <select id="budget-currency" name="currency" aria-label="Budget currency"></select>
+          <input
+            id="budget-amount"
+            name="amount"
+            type="text"
+            inputmode="decimal"
+            autocomplete="off"
+            spellcheck="false"
+            aria-describedby="budget-error"
+            placeholder="2,000,000">
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="primary">Allocate budget</button>
+        <button type="button" id="reset-btn" class="quiet" hidden>Reset</button>
+      </div>
+
+      <p class="hint">
+        This is extra money added <b>on top of</b> existing payroll &mdash; not a target total.
+        Everyone receives the <b>same percentage increase</b>, so higher salaries receive
+        proportionally larger amounts.
+      </p>
+
+      <p id="budget-error" class="error" role="alert" aria-live="polite" hidden></p>
+    </form>
+  </section>
+
+  <p class="prompt" id="idle-prompt">
+    <span class="prompt-mark" aria-hidden="true">&uarr;</span>
+    Enter an amount above and choose a currency, then select
+    <b>Allocate budget</b> to see how it is shared across all 300 employees.
+  </p>
+
+  <section class="section" id="summary" aria-label="Allocation summary" hidden></section>
+
+  <section class="section" aria-labelledby="ledger-heading">
+    <p class="eyebrow" id="ledger-heading">Employees</p>
+
+    <div class="table-bar">
+      <div class="filters" id="filters" role="group" aria-label="Filter by country"></div>
+
+      <div class="view-controls">
+        <div class="field-inline">
+          <label for="role-filter">Role</label>
+          <select id="role-filter"></select>
+        </div>
+        <div class="field-inline">
+          <label for="page-size">Rows</label>
+          <select id="page-size">
+            <option value="10">10</option>
+            <option value="25" selected>25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+        <button type="button" class="sort-chip" id="sort-chip" hidden></button>
+        <span id="rows-shown"></span>
+      </div>
+    </div>
+
+    <div class="ledger-scroll">
+      <table class="ledger">
+        <colgroup>
+          <col class="c-name"><col class="c-id"><col class="c-role"><col class="c-country">
+          <col class="c-money"><col class="c-money"><col class="c-money">
+        </colgroup>
+        <thead id="ledger-head">
+          <tr>
+            <th scope="col" data-sort="name">
+              <button type="button" class="sort-btn" data-sort-key="name">
+                <span class="sort-head">Name<i class="sort-mark" aria-hidden="true"></i></span>
+              </button>
+            </th>
+            <th scope="col">Employee_ID</th>
+            <th scope="col">Role</th>
+            <th scope="col">Country</th>
+            <th scope="col" class="num" data-sort="salary">
+              <button type="button" class="sort-btn" data-sort-key="salary">
+                <span class="sort-head">Salary<i class="sort-mark" aria-hidden="true"></i></span>
+                <span class="sub">before allocation</span>
+              </button>
+            </th>
+            <th scope="col" class="num" data-sort="allocation">
+              <button type="button" class="sort-btn" data-sort-key="allocation">
+                <span class="sort-head">Allocation<i class="sort-mark" aria-hidden="true"></i></span>
+                <span class="sub">additional</span>
+              </button>
+            </th>
+            <th scope="col" class="num" data-sort="updated">
+              <button type="button" class="sort-btn" data-sort-key="updated">
+                <span class="sort-head">Updated salary<i class="sort-mark" aria-hidden="true"></i></span>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="employee-rows"></tbody>
+      </table>
+    </div>
+
+    <nav class="pagination" id="pagination" aria-label="Employee table pages"></nav>
+  </section>
+
+  </main>
+
+  <footer>
+    <dl class="footnotes">
+      <dt>Rates</dt>
+      <dd id="rate-provenance"></dd>
+      <dt>Data</dt>
+      <dd>Synthetic, generated deterministically. Method and full reasoning in <code>Design.md</code>.</dd>
+    </dl>
+  </footer>
+
+</div>
+<script type="module" src="src/ui/app.js"></script>
+</body>
+</html>

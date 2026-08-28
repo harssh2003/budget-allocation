@@ -5,8 +5,9 @@ what it argues, the ten decisions that shape it, and where to look when you want
 Everything below links into the document rather than restating it.
 
 `BRIEF.md` in this folder is the scoping brief the design was held to — the requirements, the
-standard, and the amendments that followed measuring the demo's engine. It is supporting material,
-not the deliverable.
+standard, and the amendments that followed measuring the demo's engine. `AI-WORKFLOW.md` records how
+AI was used to produce both deliverables, how its output was validated, and where it was wrong. Both
+are supporting material, not the deliverable.
 
 ---
 

@@ -83,8 +83,9 @@ budget-allocation/
 ├── PROMPT.md               the assignment, verbatim
 ├── CLAUDE.md               this file
 ├── design/                 Deliverable 2
-│   ├── BRIEF.md            scoping brief
-│   └── PRODUCTION-DESIGN.md    the deliverable (not started)
+│   ├── README.md           reader guide; the folder's landing page on GitHub
+│   ├── BRIEF.md            scoping brief (process log trimmed)
+│   └── PRODUCTION-DESIGN.md    the deliverable (complete)
 └── demo/                   Deliverable 1
     ├── index.html
     ├── src/
@@ -133,7 +134,7 @@ budget-allocation/
 | 5 — UX polish | **Done** — rebuilt as a data tool (D-14). Light-only, paginated. Three defects found and fixed |
 | 6 — Final review | **Done** — review pass: 1 crash, 3 defects, 1 stale comment fixed; README finalised. Follow-up layout pass (D-19) fixed a sticky-header regression and table reflow |
 | 7 — Edge-case review | **Done** — seventeen areas probed by hand and by measurement. Two layout defects (money-cell truncation, stat overflow) fixed by sizing from the data; one false claim in the refusal copy corrected; the budget cap re-derived from payroll (D-23); the two rejection layers made consistent (D-26). A measured contrast sweep found 17 of 43 text styles below WCAG AA; the neutral ramp was re-derived from the contrast floor and a `main` landmark added (D-27) |
-| D2 — Design document | Scoping brief written: `design/BRIEF.md`. The deliverable is `design/PRODUCTION-DESIGN.md`, not `DESIGN.md`, so no filename in the repository collides with `demo/Design.md`. Execution not started; to be run in a separate session |
+| D2 — Design document | **Done** — `design/PRODUCTION-DESIGN.md`: 23 sections, a sources appendix, 14 diagrams. Named so that no filename in the repository collides with `demo/Design.md`. Scoped by `design/BRIEF.md`. Every section states the problem, the options, the trade-offs, the chosen solution, its consequences, and what would change the decision; every figure is measured, quoted from documentation, or labelled an estimate |
 | Deployment | Vercel, static, root directory `demo` (D-21). Link lives in the repository root README |
 
 **Verified so far.** Engine: exact per-currency reconciliation across budgets in all

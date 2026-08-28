@@ -11,12 +11,13 @@ sample data the brief asked for, not the scope of the problem — the country an
 currency set is configuration, and the production design treats it as tenant
 data.
 
-Two deliverables, the prompt that directed them, and the brief the work ran under.
+Two deliverables — a working demo and a production design — plus the prompt that
+directed them and the brief the work ran under.
 
 | | | |
 |---|---|---|
 | **Demo** *(Deliverable 1)* | [`demo/`](demo/) | A working, self-contained demo. No dependencies, no build step, 114 tests. Start with its [README](demo/README.md). |
-| **Production design** *(Deliverable 2)* | [`design/`](design/) | How the demo becomes a multi-tenant platform. The scoping brief is [`BRIEF.md`](design/BRIEF.md); `PRODUCTION-DESIGN.md` follows it. |
+| **Production design** *(Deliverable 2)* | [`design/PRODUCTION-DESIGN.md`](design/PRODUCTION-DESIGN.md) | How the demo becomes a multi-tenant platform: money, rules, plain-English authoring, and what was deliberately not built. Start with the [reader guide](design/README.md) — it names a two-minute and a ten-minute path through it. |
 | **Prompt** | [`PROMPT.md`](PROMPT.md) | The master prompt used to direct the AI-assisted build, reproduced verbatim. |
 | **Agent brief** | [`CLAUDE.md`](CLAUDE.md) | The standing instructions the build ran under: locked requirements, scope boundaries, and when to stop and ask. |
 
@@ -43,8 +44,12 @@ in CI on Node 20 and 22.
 3. [`demo/tests/`](demo/tests/) — the allocation is verified by
    invariants rather than examples, and the suite has been checked by mutation
    testing: eight deliberate defects, each caught.
-4. [`design/BRIEF.md`](design/BRIEF.md) — how the demo becomes a
-   production platform, and the standard the design document is held to.
+4. [`design/PRODUCTION-DESIGN.md`](design/PRODUCTION-DESIGN.md) — Deliverable 2.
+   How the demo becomes a production platform: exact money end to end, an
+   append-only ledger, a rule catalogue authored in plain English, and the
+   components deliberately excluded with the condition that would reverse each.
+   The [reader guide](design/README.md) is the way in; the scoping brief it was
+   held to is [`design/BRIEF.md`](design/BRIEF.md).
 
 The demo's exchange rates are a fixed snapshot, not live rates; see the demo's
 README for the values and the date.

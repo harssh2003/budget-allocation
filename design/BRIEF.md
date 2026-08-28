@@ -285,23 +285,26 @@ hand-wave any of it.
 - **Rounding.** The policy, where it is applied, how many times, and why that
   number of times. Phase 0 enumerated the production rounding points the
   document must count *(§12, A4)*: one half-up rounding per currency group per
-  run (unchanged from D-06); guardrail clamps, which are integer operations; the
+  run *(the design counts it per currency group **per tranche** per run, because
+  each tranche is a complete allocation problem — PRODUCTION-DESIGN §4.5,
+  §5.5)*; guardrail clamps, which are integer operations; the
   conversion of a pool delegated down the hierarchy into another currency *(a
   point the design removes: pools are held in the planning currency only, and
   local-currency pools are a stated extension — PRODUCTION-DESIGN §4.5, §4.7)*;
   and the residue itself. Per-employee amounts are never rounded individually.
-- **Reconciliation.** Which invariant is guaranteed (D-05), how it is verified,
-  and where the residue is recorded. Residue that is not recorded is residue that
-  is lost. The residual bound is half a minor unit per currency group converted
-  to base, so it **grows with the number of currencies** a tenant pays in — the
-  demo's sub-cent figure is a property of its three currencies (D-25), not of the
-  algorithm. The bound is computed and stored with every run, and the residue is
-  a ledger entry against a per-cycle rounding-residue account, never absorbed
-  into an employee line *(refined in Phase 1: the residue is recorded as an exact
-  rational on the immutable run record and is observable as the ledger's
-  translation position; it is not posted as a money line, because it is smaller
-  than a minor unit by construction and posting it would invent one more
-  rounding — PRODUCTION-DESIGN §4.6)*.
+- **Reconciliation.** Which invariant is guaranteed (D-05), how it is
+  verified, and where the residue is recorded. Residue that is not recorded is
+  residue that is lost. The residue bound *(the design's term)* is half a
+  minor unit per currency group, and per tranche in the design, converted to
+  base. It therefore **grows with the number of currencies** a tenant pays in:
+  the demo's sub-cent figure is a property of its three currencies (D-25), not
+  of the algorithm. The bound is computed and stored with every run, and the
+  residue is a ledger entry against a per-cycle rounding-residue account,
+  never absorbed into an employee line *(refined in Phase 1: the residue is
+  recorded as an exact rational on the immutable run record and is observable
+  as the ledger's translation position; it is not posted as a money line,
+  because it is smaller than a minor unit by construction and posting it would
+  invent one more rounding — PRODUCTION-DESIGN §4.6)*.
 - **Country and org subtotals.** Derived by aggregating local amounts, or by
   converting then aggregating? These give different answers. Pick and justify.
 - **Reproducibility.** A committed allocation from two years ago must be
@@ -597,7 +600,7 @@ labelled as such wherever they are used):
   isolation, memory per run, result volume and database I/O do. Horizontal
   scaling of allocation *compute* is not required at the scale in scope;
   isolation and bounding are. The full write-up belongs in PRODUCTION-DESIGN
-  §8.17 *(§12, A13)*.
+  §18 *(§12, A13)*.
 
 ### Phase 1 — The money core
 Money ledger, exchange-rate versioning, rounding and reconciliation at scale,
@@ -708,7 +711,7 @@ argue. The document states each with its reasoning *(§12, A14)*.
    simulation with explainability, idempotent commit, corrections, export with
    acknowledgement, SSO with RBAC, audit log and invariant alerting. Delegated
    manager planning, approval chains, employee statements, pay-equity reporting,
-   the expression language and SCIM follow. All ten capabilities in §7 are
+   the expression language and SCIM follow. All eleven capabilities in §7 are
    designed in full; the answer fixes the order of the roadmap and the day-one
    foundations that avoid a rewrite: tenant isolation, the ledger, immutable
    snapshots, idempotent commit, the job runner, and versioned rule sets, rate
